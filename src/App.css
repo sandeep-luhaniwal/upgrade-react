@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+    --color-gray-light: #DCDCDC;
+    --color-black-light: #0F3348;
+    --color-yellow: #E2FF54;
+    --color-green: #00B512;
+    --color-dark-green: #646161;
+    --color-due-green: #646060;
+    --color-light-green: #006022;
+    --color-natural: #EAECF0;
+    --color-natural-black: #031B1D;
+    --color-light-black: #090909;
+    --leading-100: 100%;
+    --leading-150: 150%;
+    --leading-120: 120%;
+
+}
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('./assets//fonts/integral-cf/Fontspring-DEMO-integralcf-regular.otf');
+    font-display: swap;
+}
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.intergral_cf {
+    font-family: 'Integral CF', sans-serif !important;
+}
+
+
+.bg_hero {
+    background-image: url('./assets/images/webp/bg-hero-graph-img.webp');
+    background-size: cover;
+    background-position: top;
+}
+.bg_trust {
+    background-image: url('./assets/images/webp/bg-trust-value.webp');
+    background-size: cover;
+    background-position: center;
+}

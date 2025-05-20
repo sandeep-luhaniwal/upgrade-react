@@ -1,0 +1,70 @@
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import mainlogo from '../../assets/images/svg/main-logo.svg'
+import { NAVIGATION_LINK_LIST } from '../../utlis/helper'
+import Icons from './Icons'
+import Hero from '../home/Hero'
+
+const NavBar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+
+    return (
+        <div className={`bg-black-light bg_hero flex flex-col relative z-10 ${location.pathname === '/' ? "min-h-max" : "h-auto"}`}>
+            <div>
+                <div className='max-w-[1140px] mx-auto px-4 xl:px-0 py-5'>
+                    <div className="flex justify-between items-center relative z-10">
+                        <Link to={"/"}>
+                            <img src={mainlogo} alt="main logo" className='w-[122px]' />
+                        </Link>
+                        <div className="md:flex hidden items-center gap-4 lg:gap-6">
+                            {NAVIGATION_LINK_LIST.slice(0, -1).map((obj, i) => {
+                                return (
+                                    <Link
+                                        className='text-gray-light text-base leading-100 font-normal duration-300 hover:text-yellow'
+                                        key={i}
+                                        to={obj.url}
+                                    >
+                                        {obj.title}
+                                    </Link>
+                                );
+                            })}
+                        </div>
+                        <div className="flex items-center gap-4 sm:gap-6">
+                            <button className='text-gray-light font-semibold border border-white hover:bg-yellow duration-300 hover:border-yellow hover:text-green leading-100 py-2.5 md:py-3 px-5 md:px-[37px] rounded-xl cursor-pointer'>Sign In</button>
+                            <div className='md:hidden' onClick={() => setIsOpen(true)}>
+                                <Icons icon={"menuToggel"} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Mobile Menu */}
+                <div className={`min-h-screen md:hidden bg-black-light flex justify-center items-center flex-col gap-6 w-full fixed ${isOpen ? "top-0" : "-top-full"} left-0 transition-all duration-300 ease-in-out z-20`}>
+                    <div className='absolute top-4 right-4' onClick={() => setIsOpen(false)}>
+                        <Icons icon={"corss"} />
+                    </div>
+                    {NAVIGATION_LINK_LIST.map((obj, i) => {
+                        if (i === NAVIGATION_LINK_LIST.length - 1) return null;
+                        return (
+                            <Link
+                                className='text-gray-light text-base leading-100 font-normal duration-300 hover:text-yellow'
+                                key={i}
+                                to={obj.url}
+                            >
+                                {obj.title}
+                            </Link>
+                        );
+                    })}
+                </div>
+            </div>
+            {location.pathname === '/' && (
+                <div className='flex grow'>
+                    <Hero />
+                </div>
+            )}
+        </div>
+    )
+}
+
+export default NavBar;
