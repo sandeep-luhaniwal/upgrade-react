@@ -37,5 +37,6 @@ export const SOCIAL_MEDIA_LINK_LIST = [
 export const FOOTER_POLICY_LINKS = [
     { title: 'Privacy Policy', url: '/privacy-policy' },
     { title: 'Terms & Condition', url: '/terms' },
+    { title: 'Refund Policy', url: '/refund-policy' },
 
 ];

@@ -9,18 +9,18 @@ import Icons from './Icons';
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <div className='bg-[#F6F9F8]'>
+        <div className='bg-[#f2f3f3]'>
             <div className='max-w-[1140px] mx-auto px-4 xl:px-0 py-10 md:py-16 lg:py-20 flex flex-col justify-center items-center'>
                 <Link to="/">
-                    <img src={footer_logo} alt="footer logo" className='w-[270px]' />
+                    <img src={footer_logo} alt="footer logo" className='w-[229px]' />
                 </Link>
 
                 <div className="flex gap-5 pt-4 ">
                     <Link to="/">
-                        <img src={app_store} alt="app store" className='w-[150px] h-[50px]' />
+                        <img src={app_store} alt="app store" className='w-[135px] h-[40px]' />
                     </Link>
                     <Link to="/">
-                        <img src={google_play} alt="google play" className='w-[150px] h-[50px]' />
+                        <img src={google_play} alt="google play" className='w-[135px] h-[40px]' />
                     </Link>
                 </div>
 
@@ -47,21 +47,21 @@ const Footer = () => {
                         </Link>
                     ))}
                 </div>
-                <p className='text-black py-4 font-semibold text-sm leading-100'>Send Your Feedback :
+                <p className='text-black py-4 text-center font-semibold text-sm leading-100'>Send Your Feedback:
                     <a
-                        className="font-normal text-black duration-300 hover:text-green"
+                        className="font-normal max-sm:block ms-1 text-black duration-300 hover:text-green"
                         href="mailto:Support@Interactiveinvoice.com"
                     >
                         Support@Interactiveinvoice.com
                     </a>
                 </p>
 
-                <div className="flex justify-between w-full mt-5 pt-5 border-t-[0.2px] gap-4 items-center">
-                    <p className='text-due-green text-base leading-150'>© {year} Design Monks. All rights reserved.</p>
-                    <div className="flex flex-wrap justify-center gap-2 md:gap-4">
+                <div className="flex flex-col lg:flex-row justify-between w-full mt-5 pt-5 border-t-[0.2px] gap-4 items-center">
+                    <p className='text-due-green order-2 lg:order-1 text-sm md:text-base leading-150'>© {year} Design Monks. All rights reserved.</p>
+                    <div className="flex flex-wrap order-1 lg:order-2 justify-center gap-2 md:gap-4">
                         {FOOTER_POLICY_LINKS.map((link, i) => (
                             <div key={i} className="flex items-center gap-2">
-                                <Link to={link.url} className="text-due-green leading-150 text-base hover:text-black duration-300">
+                                <Link to={link.url} className="text-due-green leading-150 text-sm md:text-base hover:text-black duration-300">
                                     {link.title}
                                 </Link>
                                 {i !== FOOTER_POLICY_LINKS.length - 1 && (
