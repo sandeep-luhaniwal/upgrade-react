@@ -11,7 +11,7 @@ export const NAVIGATION_LINK_LIST = [
         title: "How It Works",
         url: "/",
     },
-    
+
 ];
 
 export const SOCIAL_MEDIA_LINK_LIST = [
@@ -37,8 +37,5 @@ export const SOCIAL_MEDIA_LINK_LIST = [
 export const FOOTER_POLICY_LINKS = [
     { title: 'Privacy Policy', url: '/privacy-policy' },
     { title: 'Terms & Condition', url: '/terms' },
-    { title: 'Refund Policy', url: '/refund-policy' },
-    // { title: 'Cookie Notice', url: '/cookies' },
-    // { title: 'Copyright Policy', url: '/copyright' },
-    // { title: 'Data Policy', url: '/data-policy' },
+
 ];

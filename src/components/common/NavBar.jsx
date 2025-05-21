@@ -12,7 +12,7 @@ const NavBar = () => {
     return (
         <div className={`bg-black-light bg_hero flex flex-col relative z-10 ${location.pathname === '/' ? "min-h-max" : "h-auto"}`}>
             <div>
-                <div className='max-w-[1140px] mx-auto px-4 xl:px-0 py-5'>
+                <div className='max-w-[1140px] mx-auto px-4 xl:px-0 py-[22px]'>
                     <div className="flex justify-between items-center relative z-10">
                         <Link to={"/"}>
                             <img src={mainlogo} alt="main logo" className='sm:w-[185px] w-[140px]' />
