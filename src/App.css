@@ -12,6 +12,9 @@
     --color-light-green: #006022;
     --color-natural: #EAECF0;
     --color-natural-black: #031B1D;
+    --color-natural-green: #04684C;
+    --color-orange: #F06323;
+    --color-off-white: #FBF9F1;
     --color-light-black: #090909;
     --leading-100: 100%;
     --leading-150: 150%;
@@ -47,4 +50,21 @@ body {
     background-image: url('./assets/images/webp/bg-trust-value.webp');
     background-size: cover;
     background-position: center;
+}
+.slide_container {
+    width: calc(360px * 4);
+    -webkit-animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-190px * 6));
+        transform: translateX(calc(-190px * 6));
+    }
 }

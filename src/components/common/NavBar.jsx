@@ -15,10 +15,10 @@ const NavBar = () => {
                 <div className='max-w-[1140px] mx-auto px-4 xl:px-0 py-5'>
                     <div className="flex justify-between items-center relative z-10">
                         <Link to={"/"}>
-                            <img src={mainlogo} alt="main logo" className='w-[122px]' />
+                            <img src={mainlogo} alt="main logo" className='sm:w-[185px] w-[140px]' />
                         </Link>
                         <div className="md:flex hidden items-center gap-4 lg:gap-6">
-                            {NAVIGATION_LINK_LIST.slice(0, -1).map((obj, i) => {
+                            {NAVIGATION_LINK_LIST.map((obj, i) => {
                                 return (
                                     <Link
                                         className='text-gray-light text-base leading-100 font-normal duration-300 hover:text-yellow'
@@ -45,7 +45,6 @@ const NavBar = () => {
                         <Icons icon={"corss"} />
                     </div>
                     {NAVIGATION_LINK_LIST.map((obj, i) => {
-                        if (i === NAVIGATION_LINK_LIST.length - 1) return null;
                         return (
                             <Link
                                 className='text-gray-light text-base leading-100 font-normal duration-300 hover:text-yellow'

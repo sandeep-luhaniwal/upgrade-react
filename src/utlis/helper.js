@@ -1,28 +1,17 @@
 export const NAVIGATION_LINK_LIST = [
     {
-        title: "Personal Loan",
+        title: "Home",
         url: "/",
     },
     {
-        title: "One Card",
+        title: "Features",
         url: "/",
     },
     {
-        title: "Savings",
+        title: "How It Works",
         url: "/",
     },
-    {
-        title: "Checking",
-        url: "/",
-    },
-    {
-        title: "Help",
-        url: "/",
-    },
-    {
-        title: "Support",
-        url: "/",
-    },
+    
 ];
 
 export const SOCIAL_MEDIA_LINK_LIST = [
