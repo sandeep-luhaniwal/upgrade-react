@@ -1,14 +1,11 @@
-import React from 'react'
-import Featured from './Featured'
-import TrustValue from './TrustValue'
-import PartnerSlider from './PartnerSlider'
-import SendInvoice from './SendInvoice'
 import AboutUs from './AboutUs'
+import Featured from './Featured'
+import SendInvoice from './SendInvoice'
+import TrustValue from './TrustValue'
 
 const HomePage = () => {
     return (
         <div>
-            <PartnerSlider />
             <AboutUs />
             <Featured />
             <TrustValue />

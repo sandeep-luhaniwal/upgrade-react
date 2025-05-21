@@ -15,13 +15,13 @@ const NavBar = () => {
                 <div className='max-w-[1140px] mx-auto px-4 xl:px-0 py-[22px]'>
                     <div className="flex justify-between items-center relative z-10">
                         <Link to={"/"}>
-                            <img src={mainlogo} alt="main logo" className='sm:w-[185px] w-[140px]' />
+                            <img src={mainlogo} alt="main logo" className='sm:w-[185px] w-[130px]' />
                         </Link>
                         <div className="md:flex hidden items-center gap-4 lg:gap-6">
                             {NAVIGATION_LINK_LIST.map((obj, i) => {
                                 return (
                                     <Link
-                                        className='text-gray-light text-base leading-100 font-normal duration-300 hover:text-yellow'
+                                        className='text-gray-light text-base leading-100 font-normal duration-300 hover:text-orange'
                                         key={i}
                                         to={obj.url}
                                     >
@@ -30,8 +30,10 @@ const NavBar = () => {
                                 );
                             })}
                         </div>
-                        <div className="flex items-center gap-4 sm:gap-6">
-                            <button className='text-gray-light font-semibold border border-white hover:bg-yellow duration-300 hover:border-yellow hover:text-green leading-100 py-2.5 md:py-3 px-5 md:px-[37px] rounded-xl cursor-pointer'>Sign In</button>
+                        <div className="flex items-center gap-2 sm:gap-6">
+                            <a href='#download' className='text-gray-light font-semibold border border-white hover:bg-orange duration-300 hover:border-orange hover:text-white leading-100 py-2.5 md:py-3 px-2 sm:px-4 md:px-6 rounded-xl cursor-pointer'>
+                                Download App
+                            </a>
                             <div className='md:hidden' onClick={() => setIsOpen(true)}>
                                 <Icons icon={"menuToggel"} />
                             </div>

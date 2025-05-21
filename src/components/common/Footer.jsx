@@ -15,7 +15,7 @@ const Footer = () => {
                     <img src={footer_logo} alt="footer logo" className='w-[229px]' />
                 </Link>
 
-                <div className="flex gap-5 pt-4 ">
+                <div id='download' className="flex gap-5 pt-4 ">
                     <Link to="/">
                         <img src={app_store} alt="app store" className='w-[135px] h-[40px]' />
                     </Link>
@@ -28,7 +28,7 @@ const Footer = () => {
                         <Link
                             to={obj.url}
                             key={i}
-                            className='bg-light-green duration-300 hover:bg-black rounded-full w-8 h-8 flex justify-center items-center'
+                            className='bg-light-green duration-300 hover:bg-orange rounded-full w-8 h-8 flex justify-center items-center'
                         >
                             <Icons icon={obj.icon} />
                         </Link>
@@ -44,11 +44,11 @@ const Footer = () => {
                 </p>
 
                 <div className="flex flex-col lg:flex-row justify-between w-full mt-5 py-5 border-t-[0.2px] gap-4 items-center">
-                    <p className='text-due-green order-2 lg:order-1 text-sm md:text-base leading-150'>© {year} Design Monks. All rights reserved.</p>
+                    <p className='text-due-green order-2 lg:order-1 text-sm md:text-base leading-150'>© {year} Interactive Invoice. All rights reserved.</p>
                     <div className="flex flex-wrap order-1 lg:order-2 justify-center gap-2 md:gap-4">
                         {FOOTER_POLICY_LINKS.map((link, i) => (
                             <div key={i} className="flex items-center gap-2">
-                                <Link to={link.url} className="text-due-green leading-150 text-sm md:text-base hover:text-black duration-300">
+                                <Link to={link.url} className="text-due-green leading-150 text-sm md:text-base hover:text-orange duration-300">
                                     {link.title}
                                 </Link>
                                 {i !== FOOTER_POLICY_LINKS.length - 1 && (
