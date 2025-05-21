@@ -27,13 +27,14 @@ const Featured = () => {
                         <span className='block h-1 w-1 p-[1px] ms-2 bg-[#676666] mt-2.5 rounded-full'></span>
                         Download invoices as PDF or share via email/WhatsApp
                     </p>
-                    <div className='mt-6 md:mt-8 lg:mt-10 flex cursor-pointer max-w-max'>
-                        <button className='bg-white border border-green cursor-pointer text-black rounded-[44px] font-semibold text-base leading-150 py-3.5 px-6'>
+                    <div className='mt-6 group md:mt-8 lg:mt-10 flex cursor-pointer max-w-max'>
+                        <button className='bg-white border relative border-green group-hover:border-orange cursor-pointer text-black rounded-[44px] font-semibold text-base leading-150 py-3.5 px-6'>
                             Explore Features
+                             <span className='h-[52px] group-hover:w-full group-hover:translate-x-0 duration-300 absolute top-0 right-0 translate-x-8 w-[52px] bg-orange rounded-full flex items-center justify-center'>
+                                <span className='w-0 group-hover:-me-5 scale-0 group-hover:scale-100 text-orange group-hover:text-white duration-300 group-hover:w-full'>Explore Features</span>
+                                <Icons icon='whitearrow' />
+                            </span>
                         </button>
-                        <span className='h-[52px] -translate-x-5 w-[52px] bg-orange rounded-full flex items-center justify-center'>
-                            <Icons icon='whitearrow' />
-                        </span>
                     </div>
                 </div>
                 <div className='order-1 md:order-2'>

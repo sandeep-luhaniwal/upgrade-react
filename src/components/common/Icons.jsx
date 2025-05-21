@@ -11,14 +11,14 @@ const Icons = ({ icon, className }) => {
             </svg>
         ),
         whitearrow: (
-            <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <svg className="duration-300 group-hover:rotate-[750deg]" width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.7112 19.2051L22.7478 11.6043L15.147 9.56766" stroke="white" strokeWidth="1.6" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M9.25223 19.396L22.6128 11.6822" stroke="white" strokeWidth="1.6" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
 
         ),
         arrow: (
-            <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="duration-300 group-hover:rotate-[750deg]" width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.7112 19.205L22.7478 11.6042L15.147 9.56754" stroke="#344054" strokeWidth="1.6" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M9.25223 19.3959L22.6128 11.6821" stroke="#344054" strokeWidth="1.6" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

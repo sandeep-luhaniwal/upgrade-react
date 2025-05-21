@@ -58,7 +58,7 @@ const refundPolicyData = [
 const RefundPolicy = () => {
   return (
     <div className="max-w-[1140px] mx-auto px-4 xl:px-0 py-10 text-gray-800">
-      <h1 className="text-3xl font-bold mb-6 text-green">Refund Policy</h1>
+      <h1 className="text-3xl font-bold mb-6 text-orange">Refund Policy</h1>
       {refundPolicyData.map((section, idx) => (
         <div key={idx} className="mb-6">
           <h2 className="text-xl font-semibold mb-2">{section.title}</h2>

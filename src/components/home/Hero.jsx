@@ -14,13 +14,15 @@ const Hero = () => {
                     <p className='text-[#dcdcdc] font-medium text-base lg:text-lg lg:max-w-[640px] capitalize'>
                         Easily generate professional invoices, send them to clients, and get paid online—all in one secure platform. Simplify your billing process and focus more on growing your business.
                     </p>
-                    <div className='mt-6 lg:mt-8 xl:mt-10 flex cursor-pointer max-w-max'>
-                        <button className='bg-green cursor-pointer text-off-white rounded-[44px] font-semibold text-base leading-150 py-3.5 px-6'>
-                           Get Started Free
+                    <div className='mt-6 lg:mt-8 xl:mt-10 flex group cursor-pointer max-w-max'>
+                        <button className='bg-green relative cursor-pointer text-off-white rounded-[44px] font-semibold text-base leading-150 py-3.5 px-6'>
+                            Get Started Free
+                            <span className='h-[52px] group-hover:w-full group-hover:translate-x-0 duration-300 absolute top-0 right-0 translate-x-8 w-[52px] bg-off-white rounded-full flex items-center justify-center'>
+                                <span className='w-0 group-hover:-me-5 scale-0 group-hover:scale-100 text-black duration-300 group-hover:w-full'>Get Started Free</span>
+                                <Icons icon='arrow' />
+                            </span>
                         </button>
-                        <span className='h-[52px] -translate-x-5 w-[52px] bg-off-white rounded-full flex items-center justify-center'>
-                            <Icons icon='arrow' />
-                        </span>
+
                     </div>
                 </div>
                 <div className='flex justify-center md:justify-end md:order-2'>

@@ -7,10 +7,12 @@ import PrivacyPolicy from "./components/polices/PrivacyPolicy";
 import TermsAndConditions from "./components/polices/TermsAndConditions";
 import ScrollToTop from "./components/common/ScrollToTop";
 import HomePage from "./components/home/HomePage";
+import BackToTop from "./components/common/BackToTop";
 
 function App() {
   return (
     <div>
+      <BackToTop />
       <ScrollToTop />
       <NavBar />
       <Routes>

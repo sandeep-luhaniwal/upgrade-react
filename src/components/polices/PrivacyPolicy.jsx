@@ -75,7 +75,7 @@ const privacyPolicyData = [
 const PrivacyPolicy = () => {
   return (
     <div className="max-w-[1140px] xl:px-0 mx-auto px-4 py-10 text-gray-800">
-      <h1 className="text-3xl font-bold mb-6 text-green">Privacy Policy</h1>
+      <h1 className="text-3xl font-bold mb-6 text-orange">Privacy Policy</h1>
       {privacyPolicyData.map((section, idx) => (
         <div key={idx} className="mb-6">
           <h2 className="text-xl font-semibold mb-2">{section.title}</h2>

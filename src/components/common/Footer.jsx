@@ -10,8 +10,8 @@ const Footer = () => {
     const year = new Date().getFullYear();
     return (
         <div className='bg-[#f2f3f3]'>
-            <div className='max-w-[1140px] mx-auto px-4 xl:px-0 py-10 md:py-16 lg:py-20 flex flex-col justify-center items-center'>
-                <Link to="/">
+            <div className='max-w-[1140px] mx-auto px-4 xl:px-0 pt-10 md:pt-16 lg:pt-20 flex flex-col justify-center items-center'>
+                <Link onClick={() => window.scrollTo(0, 0)} to="/">
                     <img src={footer_logo} alt="footer logo" className='w-[229px]' />
                 </Link>
 
@@ -23,19 +23,6 @@ const Footer = () => {
                         <img src={google_play} alt="google play" className='w-[135px] h-[40px]' />
                     </Link>
                 </div>
-
-                {/* <div className="flex justify-center flex-wrap gap-4 md:gap-8 lg:gap-12 py-8 lg:py-10">
-                    {NAVIGATION_LINK_LIST.map((obj, i) => (
-                        <Link
-                            className='text-dark-green text-base leading-100 font-normal text-center duration-300 hover:text-black'
-                            key={i}
-                            to={obj.url}
-                        >
-                            {obj.title}
-                        </Link>
-                    ))}
-                </div> */}
-
                 <div className="flex justify-center gap-3 pt-8 lg:pt-10">
                     {SOCIAL_MEDIA_LINK_LIST.map((obj, i) => (
                         <Link
@@ -56,7 +43,7 @@ const Footer = () => {
                     </a>
                 </p>
 
-                <div className="flex flex-col lg:flex-row justify-between w-full mt-5 pt-5 border-t-[0.2px] gap-4 items-center">
+                <div className="flex flex-col lg:flex-row justify-between w-full mt-5 py-5 border-t-[0.2px] gap-4 items-center">
                     <p className='text-due-green order-2 lg:order-1 text-sm md:text-base leading-150'>© {year} Design Monks. All rights reserved.</p>
                     <div className="flex flex-wrap order-1 lg:order-2 justify-center gap-2 md:gap-4">
                         {FOOTER_POLICY_LINKS.map((link, i) => (

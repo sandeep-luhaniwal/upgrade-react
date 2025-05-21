@@ -18,14 +18,15 @@ const TrustValue = () => {
                         <p className='text-[#DBDBDB] flex gap-4 capitalize w-full text-base leading-150'>
                             Your data and payments are protected with enterprise-grade encryption. We prioritize your privacy and ensure secure invoice generation, payment tracking, and client communication.
                         </p>
-
-                        <div className='mt-10 flex cursor-pointer max-w-max'>
-                            <button className='bg-green cursor-pointer text-white rounded-[44px] font-semibold text-base leading-150 py-3.5 px-6'>
-                               See How It Works
+                        <div className='mt-6 lg:mt-8 xl:mt-10 flex group cursor-pointer max-w-max'>
+                            <button className='bg-green relative cursor-pointer text-off-white rounded-[44px] font-semibold text-base leading-150 py-3.5 px-6'>
+                                See How It Works
+                                <span className='h-[52px] group-hover:w-full group-hover:translate-x-0 duration-300 absolute top-0 right-0 translate-x-8 w-[52px] bg-off-white rounded-full flex items-center justify-center'>
+                                    <span className='w-0 group-hover:-me-5 scale-0 group-hover:scale-100 text-black duration-300 group-hover:w-full'>See How It Works</span>
+                                    <Icons icon='arrow' />
+                                </span>
                             </button>
-                            <span className='h-[52px] -translate-x-5 w-[52px] bg-white rounded-full flex items-center justify-center'>
-                                <Icons icon='arrow' />
-                            </span>
+
                         </div>
                     </div>
 
