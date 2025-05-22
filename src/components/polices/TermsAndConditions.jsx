@@ -2,115 +2,141 @@ import React from "react";
 
 const termsData = [
   {
+    title: "Last Updated",
+    content: ["22 May 2025"],
+  },
+  {
     title: "INTRODUCTION",
-    content: `This website is operated by Mahna Astrology Private Limited. abc is a brand operated by Mahna Astrology Private Limited, offering astrology services and products. The terms “we,” “us,” “our,” and “abc” refer to Mahna Astrology Private Limited throughout this site...`,
+    content: [
+      'Welcome to Interactive Invoice! These Terms and Conditions ("Terms") govern your use of our mobile application ("App") and the services provided by Interactive Invoice ("we", "us", or "our"). By downloading, accessing, or using the App, you agree to be bound by these Terms.',
+      "Please read these Terms carefully before using the App.",
+    ],
   },
   {
-    title: "1. ELIGIBILITY AND USAGE RULES",
-    content: `By accepting these Terms, you confirm that you are of legal age of 18+ years. By using our services, you confirm that you meet these age requirements...`,
+    title: "1. Eligibility",
+    content: ["You must be at least 18 years old and capable of entering into a legally binding agreement to use this App."],
   },
   {
-    title: "2. GENERAL PROVISIONS",
-    content: `We may deny service to any individual at any time for any reason. Your data (excluding payment details) may be transmitted unencrypted...`,
+    title: "2. Services Provided",
+    content: [
+      "The App allows users to:",
+      [
+        "Create and manage invoices and estimates",
+        "Customize invoice templates",
+        "Export and share invoice documents",
+        "Track payment status",
+      ],
+      "We reserve the right to add, modify, or remove features without notice.",
+    ],
   },
   {
-    title: "3. INFORMATION RELIABILITY",
-    content: `Information on this site, including astrological insights and product details, may not always be precise...`,
+    title: "3. User Responsibilities",
+    content: [
+      "You agree to:",
+      [
+        "Provide accurate and complete information in your invoices/estimates",
+        "Use the App only for lawful business or personal purposes",
+        "Not use the App to create fraudulent or misleading documents",
+      ],
+    ],
   },
   {
-    title: "4. SERVICE AND PRICE ADJUSTMENTS",
-    content: `Prices for products and astrology services may change without prior notice. We reserve the right to modify...`,
+    title: "4. Account and Data Security",
+    content: [
+      "You are responsible for maintaining the confidentiality of your account credentials and all activities under your account. We do not take responsibility for data loss due to user negligence or third-party access.",
+    ],
   },
   {
-    title: "5. PRODUCTS AND ASTROLOGY OFFERINGS",
-    content: `Some products and services, such as personalized astrology readings or exclusive gemstones, may only be available online...`,
+    title: "5. Payment and Subscription",
+    content: [
+      "Some features may require a paid subscription. By subscribing, you authorize us to charge the applicable fees. All payments are non-refundable unless otherwise stated.",
+    ],
   },
   {
-    title: "6. BILLING AND ACCOUNT DETAILS",
-    content: `We may decline or adjust any order or service request at our discretion...`,
+    title: "6. Intellectual Property",
+    content: [
+      "All content and technology used in the App, including logos, graphics, and source code, are owned or licensed by us. You may not copy, modify, distribute, or reverse engineer any part of the App.",
+    ],
   },
   {
-    title: "7. THIRD-PARTY TOOLS",
-    content: `We may offer access to third-party tools (e.g., zodiac calculators) without oversight or endorsement...`,
+    title: "7. Privacy",
+    content: [
+      'We are committed to protecting your privacy. Please refer to our [Privacy Policy] for details on how we collect, use, and store your information.',
+    ],
   },
   {
-    title: "8. EXTERNAL LINKS",
-    content: `Our site may feature content or links to third-party websites. We do not control or verify these external resources...`,
+    title: "8. Limitation of Liability",
+    content: [
+      'We provide the App "as is" without any warranties. We are not liable for any indirect, incidental, or consequential damages arising from your use of the App, including errors in invoices or financial losses.',
+    ],
   },
   {
-    title: "9. USER INPUT AND SUBMISSIONS",
-    content: `If you submit feedback, reviews, or ideas (collectively “submissions”), whether requested or unsolicited...`,
+    title: "9. Termination",
+    content: [
+      "We may suspend or terminate your access to the App at our sole discretion if you violate these Terms or use the App in a manner that could cause harm to us or others.",
+    ],
   },
   {
-    title: "10. PRIVACY",
-    content: `We are committed to protecting your personal information. Our practices comply with applicable data protection laws...`,
+    title: "10. Modifications to Terms",
+    content: [
+      "We may update these Terms from time to time. Changes will be notified via the App or email. Continued use of the App after such updates constitutes acceptance of the new Terms.",
+    ],
   },
   {
-    title: "11. ERRORS AND CORRECTIONS",
-    content: `Our site may occasionally contain errors in pricing, product details, or availability...`,
+    title: "11. Governing Law",
+    content: [
+      "These Terms shall be governed by and interpreted in accordance with the laws of United States of America, without regard to conflict of laws principles.",
+    ],
   },
   {
-    title: "12. RESTRICTED ACTIONS",
-    content: `You may not use our site: (a) for illegal activities; (b) to encourage unlawful behavior...`,
-  },
-  {
-    title: "13. WARRANTY DISCLAIMER AND LIABILITY LIMITS",
-    content: `We do not assure uninterrupted, secure, or error-free service...`,
-  },
-  {
-    title: "14. INDEMNITY",
-    content: `You agree to protect abc, its affiliates, astrologers, and staff from claims...`,
-  },
-  {
-    title: "15. SEVERABILITY",
-    content: `If any part of these Terms is invalid, the remaining provisions remain enforceable...`,
-  },
-  {
-    title: "16. TERMINATION",
-    content: `We reserve the right to suspend or terminate your account if you violate these Terms...`,
-  },
-  {
-    title: "17. SHIPPING AND DELIVERY",
-    content: `We aim to ship products within [X] business days of order confirmation...`,
-  },
-  {
-    title: "18. INTELLECTUAL PROPERTY",
-    content: `All content on this website, including text, images, logos, and astrological charts, is the property...`,
-  },
-  {
-    title: "19. COMPLETE AGREEMENT",
-    content: `These Terms, with linked policies, form the full agreement between us...`,
-  },
-  {
-    title: "20. APPLICABLE LAW",
-    content: `These Terms are governed by the laws of India.`,
-  },
-  {
-    title: "21. ARBITRATION",
-    content: `Any disputes arising out of or related to these Terms will be resolved through binding arbitration...`,
-  },
-  {
-    title: "22. TERM UPDATES",
-    content: `We may revise these Terms by updating this page...`,
-  },
-  {
-    title: "23. ASTROLOGY SERVICE TERMS",
-    content: `Purpose: Astrology services are for spiritual and personal reflection, not professional advice...`,
-  },
-  {
-    title: "24. CONTACT",
-    content: `Reach us at support@abc.com`,
+    title: "12. Contact Us",
+    content: [
+      "If you have any questions about these Terms, please contact us at:",
+      ["Email: support@myinteractiveinvoice.com"],
+    ],
   },
 ];
 
 const TermsAndConditions = () => {
+  const renderContent = (item, i) => {
+    if (Array.isArray(item)) {
+      return (
+        <ul key={i} className="list-disc list-inside mb-1 ps-6 text-gray-700">
+          {item.map((point, j) => (
+            <li key={j} className="text-sm md:text-base">
+              {typeof point === "string" && point.includes("support@myinteractiveinvoice.com") ? (
+                <a href="mailto:support@myinteractiveinvoice.com" className="text-blue-600 underline">
+                  {point}
+                </a>
+              ) : (
+                point
+              )}
+            </li>
+          ))}
+        </ul>
+      );
+    } else {
+      return (
+        <p key={i} className="mb-1 ps-3 text-sm md:text-base text-gray-700 whitespace-pre-line">
+          {item.includes("support@myinteractiveinvoice.com") ? (
+            <a href="mailto:support@myinteractiveinvoice.com" className="text-blue-600 underline">
+              {item}
+            </a>
+          ) : (
+            item
+          )}
+        </p>
+      );
+    }
+  };
+
   return (
-    <div className="max-w-[1140px] mx-auto px-4 xl:px-0 py-10 text-gray-800">
-      <h1 className="text-3xl font-bold mb-4 text-orange">Terms & Conditions</h1>
+    <div className="max-w-[1140px] mx-auto px-4 xl:px-0 py-10 md:py-14 lg:py-20 text-gray-800">
+      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-orange">Terms and Conditions for Interactive Invoice</h1>
       {termsData.map((section, index) => (
-        <div key={index} className="space-y-1">
-          <h2 className="text-xl font-semibold">{section.title}</h2>
-          <p className="text-gray-700 whitespace-pre-line pb-6">{section.content}</p>
+        <div key={index} className="mb-8 ps-3">
+          <h2 className="text-xl lg:text-2xl font-bold mb-1">{section.title}</h2>
+          {section.content.map((item, i) => renderContent(item, i))}
         </div>
       ))}
     </div>

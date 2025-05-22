@@ -1,96 +1,169 @@
-import React from 'react';
+import React from "react";
 
 const privacyPolicyData = [
   {
-    title: 'INTRODUCTION',
-    content: `Mahna Astrology Private Limited, operating as VedGuru, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our website, book astrology services, or purchase products. By engaging with our platform, you consent to this policy, which complies with applicable laws, including India’s Information Technology Act, 2000, and Digital Personal Data Protection (DPDP) Act, 2023.`
+    title: "Effective Date",
+    content: ["22 May 2025"],
   },
   {
-    title: '1. INFORMATION WE COLLECT',
-    points: [
-      'Personal Information: Includes name, email, phone number, address, date of birth, payment details, and astrological data (e.g., birth chart details) provided during account creation, purchases, or consultations.',
-      'Usage Data: Includes IP address, browser type, pages visited, time spent on the site, and device information collected via cookies and analytics tools.',
-      'Submissions: Feedback, reviews, or other content you submit to us.',
-      'Consultation Data: Information shared during astrology sessions, which may be recorded for quality assurance.'
-    ]
+    title: "INTRODUCTION",
+    content: [
+      "Thank you for using Interactive Invoice. Your privacy is important to us, and this Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.",
+      "By using the Interactive Invoice app, you agree to the terms outlined in this Privacy Policy.",
+    ],
   },
   {
-    title: '2. HOW WE USE YOUR INFORMATION',
-    points: [
-      'Service Delivery: To process orders, schedule consultations, and provide personalized astrology services.',
-      'Communication: To send transactional emails (e.g., order confirmations), respond to inquiries, and, with your consent, share promotional offers.',
-      'Improvement: To analyze usage patterns and enhance our website, products, and services.',
-      'Legal Compliance: To meet regulatory requirements or protect our rights.'
-    ]
+    title: "1. Information We Collect",
+    content: [
+      "We collect the following types of information:",
+      "a) Personal Information",
+      [
+        "Name, email address, and contact details when you register or contact support.",
+        "Company name, address, and tax information when setting up your profile.",
+      ],
+      "b) Business Data",
+      [
+        "Invoice and estimate details (e.g., client name, billing items, amounts).",
+        "Payment status and due dates.",
+        "Optional notes and descriptions provided by you.",
+      ],
+      "c) Device Information",
+      [
+        "Device model, operating system, app version, and crash logs to improve app performance.",
+        "IP address for security and analytics purposes.",
+      ],
+    ],
   },
   {
-    title: '3. COOKIES AND TRACKING',
-    points: [
-      'Cookies: We use cookies to improve your browsing experience, track preferences, and analyze traffic. By using our site, you consent to cookies.',
-      'Opt-Out: You can disable cookies via browser settings, but this may affect site functionality.'
-    ]
+    title: "2. How We Use Your Information",
+    content: [
+      "We use the information to:",
+      [
+        "Generate invoices and estimates.",
+        "Store and sync your billing data securely.",
+        "Send you service-related notifications.",
+        "Improve app performance and user experience.",
+        "Provide customer support.",
+      ],
+    ],
   },
   {
-    title: '4. SHARING YOUR INFORMATION',
-    points: [
-      'We share data with:',
-      'Independent astrologers for consultation purposes.',
-      'Payment processors (e.g., banks, gateways) for transactions.',
-      'Shipping partners for product delivery.',
-      'Analytics providers (e.g., Google Analytics) for site performance.',
-      'Legal Disclosure: We may share data if required by law, to enforce our Terms, or to protect our rights, safety, or property.',
-      'No Sale: We do not sell your personal information to third parties.'
-    ]
+    title: "3. Data Sharing and Disclosure",
+    content: [
+      "We do not sell or rent your personal or business data.",
+      "We may share your data with:",
+      [
+        "Cloud service providers (e.g., for secure data storage and backup).",
+        "Law enforcement or regulatory bodies, when required by law.",
+        "Third-party analytics tools (non-personal information only) for app improvement.",
+      ],
+    ],
   },
   {
-    title: '5. DATA STORAGE AND SECURITY',
-    points: [
-      'Location: Data is stored on secure servers in India. If you are outside India, your data may be transferred to and processed here.',
-      'Security: We use encryption (e.g., SSL for payments) and reasonable safeguards, but no system is fully secure—we are not liable for breaches beyond our control.',
-      'Retention: We retain data as long as needed for service delivery, legal obligations, or business purposes, after which it is securely deleted.'
-    ]
+    title: "4. Data Security",
+    content: [
+      "We implement appropriate technical and organizational measures to safeguard your information. All sensitive data is encrypted during transmission and securely stored.",
+    ],
   },
   {
-    title: '6. YOUR RIGHTS',
-    points: [
-      'Access and Correction: You may request access to or correction of your personal data by emailing support@vedguru.com.',
-      'Deletion: You may request data deletion, subject to legal retention requirements.',
-      'Opt-Out: Unsubscribe from marketing emails via the link in our communications.'
-    ]
+    title: "5. Data Retention",
+    content: [
+      "Your data is retained as long as your account is active or as needed to provide our services. You may request deletion of your account and data at any time by contacting us.",
+    ],
   },
   {
-    title: '7. THIRD-PARTY LINKS AND TOOLS',
-    content: `Our site may include third-party links or tools (e.g., zodiac calculators). We are not responsible for their privacy practices—review their policies before use.`
+    title: "6. Your Rights",
+    content: [
+      "Depending on your location, you may have rights to:",
+      [
+        "Access or correct your information.",
+        "Delete your data.",
+        "Withdraw consent.",
+        "Lodge a complaint with a regulatory authority.",
+      ],
+      "To exercise your rights, please contact us at [support@interactiveinvoice.com].",
+    ],
   },
   {
-    title: '8. CHANGES TO THIS POLICY',
-    content: `We may update this policy by posting changes here. Continued use after updates implies consent. Check periodically for the latest version.`
+    title: "7. Children's Privacy",
+    content: [
+      "Interactive Invoice is not intended for users under the age of 13. We do not knowingly collect personal information from children.",
+    ],
   },
   {
-    title: '9. CONTACT',
-    content: `For privacy inquiries, reach us at support@gmail.com.`
-  }
+    title: "8. Changes to This Policy",
+    content: [
+      "We may update this Privacy Policy from time to time. We will notify you of any material changes through the app or via email.",
+    ],
+  },
+  {
+    title: "9. Contact Us",
+    content: [
+      "If you have any questions or concerns about this Privacy Policy, contact us at:",
+      ["Email: support@myinteractiveinvoice.com"],
+    ],
+  },
 ];
 
 const PrivacyPolicy = () => {
+  const renderContent = (item, i) => {
+    const emailRegex = /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/;
+
+    if (Array.isArray(item)) {
+      return (
+        <ul key={i} className="list-disc list-inside mb-1 ps-6 text-gray-700">
+          {item.map((point, j) => (
+            <li key={j} className="text-sm md:text-base">
+              {typeof point === "string" && emailRegex.test(point) ? (
+                <>
+                  {point.split(emailRegex).map((part, k) =>
+                    emailRegex.test(part) ? (
+                      <a key={k} href={`mailto:${part}`} className="text-blue-600 duration-300 underline">
+                        {part}
+                      </a>
+                    ) : (
+                      part
+                    )
+                  )}
+                </>
+              ) : (
+                point
+              )}
+            </li>
+          ))}
+        </ul>
+      );
+    } else {
+      return (
+        <p key={i} className="mb-1 ps-3 text-sm md:text-base text-gray-700 whitespace-pre-line">
+          {typeof item === "string" && emailRegex.test(item) ? (
+            <>
+              {item.split(emailRegex).map((part, k) =>
+                emailRegex.test(part) ? (
+                  <a key={k} href={`mailto:${part}`} className="text-blue-600 underline">
+                    {part}
+                  </a>
+                ) : (
+                  part
+                )
+              )}
+            </>
+          ) : (
+            item
+          )}
+        </p>
+      );
+    }
+  };
+
+
   return (
-    <div className="max-w-[1140px] xl:px-0 mx-auto px-4 py-10 text-gray-800">
-      <h1 className="text-3xl font-bold mb-6 text-orange">Privacy Policy</h1>
-      {privacyPolicyData.map((section, idx) => (
-        <div key={idx} className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">{section.title}</h2>
-
-          {section.content && (
-            <p className="text-base leading-relaxed">{section.content}</p>
-          )}
-
-          {section.points && (
-            <ul className="list-disc pl-10 space-y-2 text-base">
-              {section.points.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          )}
+    <div className="max-w-[1140px] mx-auto px-4 xl:px-0 py-10 text-gray-800">
+      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-orange">Privacy Policy for Interactive Invoice</h1>
+      {privacyPolicyData.map((section, index) => (
+        <div key={index} className="mb-8 ps-3">
+          <h2 className="text-xl md:text-2xl font-bold mb-1">{section.title}</h2>
+          {section.content.map((item, i) => renderContent(item, i))}
         </div>
       ))}
     </div>
