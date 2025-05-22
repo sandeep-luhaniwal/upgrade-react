@@ -40,7 +40,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className={`bg-black-light bg_hero flex flex-col relative z-10 ${location.pathname === '/' ? "min-h-max" : "h-auto"}`}>
+        <div className={`bg-black-light overflow-clip bg_hero flex flex-col relative z-10 ${location.pathname === '/' ? "min-h-max" : "h-auto"}`}>
             <div>
                 <div className='max-w-[1140px] mx-auto px-4 xl:px-0 py-[22px]'>
                     <div className="flex justify-between items-center relative z-10">
@@ -72,7 +72,7 @@ const NavBar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={`min-h-screen md:hidden bg-black-light flex justify-center items-center flex-col gap-6 w-full fixed ${isOpen ? "top-0" : "-top-full"} left-0 transition-all duration-300 ease-in-out z-20`}>
+                <div className={`min-h-screen md:hidden bg-black-light flex justify-center items-center flex-col gap-6 w-full fixed ${isOpen ? "top-0" : "-top-[110%]"} left-0 transition-all duration-300 ease-in-out z-20`}>
                     <div className='absolute top-4 right-4' onClick={() => setIsOpen(false)}>
                         <Icons icon={"corss"} />
                     </div>
