@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import mainlogo from '../../assets/images/svg/main-logo.svg'
 import { NAVIGATION_LINK_LIST } from '../../utlis/helper'
@@ -8,6 +8,36 @@ import Hero from '../home/Hero'
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.querySelector(location.hash);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [location]);
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isOpen]);
+
+    const getLinkUrl = (url) => {
+        if (url.startsWith('#')) {
+            return '/' + url;
+        }
+        return url;
+    }
 
     return (
         <div className={`bg-black-light bg_hero flex flex-col relative z-10 ${location.pathname === '/' ? "min-h-max" : "h-auto"}`}>
@@ -23,7 +53,7 @@ const NavBar = () => {
                                     <Link
                                         className='text-gray-light text-base leading-100 font-normal duration-300 hover:text-orange'
                                         key={i}
-                                        to={obj.url}
+                                        to={getLinkUrl(obj.url)}
                                     >
                                         {obj.title}
                                     </Link>
@@ -51,7 +81,8 @@ const NavBar = () => {
                             <Link
                                 className='text-gray-light text-base leading-100 font-normal duration-300 hover:text-yellow'
                                 key={i}
-                                to={obj.url}
+                                to={getLinkUrl(obj.url)}
+                                onClick={() => setIsOpen(false)}
                             >
                                 {obj.title}
                             </Link>

@@ -99,15 +99,25 @@ const termsData = [
 
 const TermsAndConditions = () => {
   const renderContent = (item, i) => {
+    const emailRegex = /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/;
+
     if (Array.isArray(item)) {
       return (
         <ul key={i} className="list-disc list-inside mb-1 ps-6 text-gray-700">
           {item.map((point, j) => (
             <li key={j} className="text-sm md:text-base">
-              {typeof point === "string" && point.includes("support@myinteractiveinvoice.com") ? (
-                <a href="mailto:support@myinteractiveinvoice.com" className="text-blue-600 underline">
-                  {point}
-                </a>
+              {typeof point === "string" && emailRegex.test(point) ? (
+                <>
+                  {point.split(emailRegex).map((part, k) =>
+                    emailRegex.test(part) ? (
+                      <a key={k} href={`mailto:${part}`} className="text-blue-600 duration-300 underline">
+                        {part}
+                      </a>
+                    ) : (
+                      part
+                    )
+                  )}
+                </>
               ) : (
                 point
               )}
@@ -118,10 +128,18 @@ const TermsAndConditions = () => {
     } else {
       return (
         <p key={i} className="mb-1 ps-3 text-sm md:text-base text-gray-700 whitespace-pre-line">
-          {item.includes("support@myinteractiveinvoice.com") ? (
-            <a href="mailto:support@myinteractiveinvoice.com" className="text-blue-600 underline">
-              {item}
-            </a>
+          {typeof item === "string" && emailRegex.test(item) ? (
+            <>
+              {item.split(emailRegex).map((part, k) =>
+                emailRegex.test(part) ? (
+                  <a key={k} href={`mailto:${part}`} className="text-blue-600 underline">
+                    {part}
+                  </a>
+                ) : (
+                  part
+                )
+              )}
+            </>
           ) : (
             item
           )}
@@ -132,7 +150,7 @@ const TermsAndConditions = () => {
 
   return (
     <div className="max-w-[1140px] mx-auto px-4 xl:px-0 py-10 md:py-14 lg:py-20 text-gray-800">
-      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-orange">Terms and Conditions for Interactive Invoice</h1>
+      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-orange">Terms and Conditions</h1>
       {termsData.map((section, index) => (
         <div key={index} className="mb-8 ps-3">
           <h2 className="text-xl lg:text-2xl font-bold mb-1">{section.title}</h2>

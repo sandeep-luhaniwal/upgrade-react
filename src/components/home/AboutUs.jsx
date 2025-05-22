@@ -63,7 +63,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-   <div className='max-w-[1140px] mx-auto px-4 w-full xl:px-0 py-14 md:py-16 lg:py-20 xl:pt-[100px] xl:pb-[120px]'>
+    <div id='about_us' className='max-w-[1140px] mx-auto px-4 w-full xl:px-0 py-14 md:py-16 lg:py-20 xl:pt-[100px] xl:pb-[120px]'>
       <div className="grid grid-cols-1 md:grid-cols-[40%_60%] lg:grid-cols-2  items-center">
         <div className='flex justify-center md:pe-4'>
           <img src={about_us} alt="chart" className="max-w-[493px] w-full" />

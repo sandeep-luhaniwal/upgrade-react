@@ -81,7 +81,7 @@ const privacyPolicyData = [
         "Withdraw consent.",
         "Lodge a complaint with a regulatory authority.",
       ],
-      "To exercise your rights, please contact us at [support@interactiveinvoice.com].",
+      "To exercise your rights, please contact us at [support@myinteractiveinvoice.com].",
     ],
   },
   {
@@ -158,8 +158,8 @@ const PrivacyPolicy = () => {
 
 
   return (
-    <div className="max-w-[1140px] mx-auto px-4 xl:px-0 py-10 text-gray-800">
-      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-orange">Privacy Policy for Interactive Invoice</h1>
+    <div className="max-w-[1140px] mx-auto px-4 xl:px-0 py-10 md:py-14 lg:py-20 text-gray-800">
+      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-orange">Privacy Policy</h1>
       {privacyPolicyData.map((section, index) => (
         <div key={index} className="mb-8 ps-3">
           <h2 className="text-xl md:text-2xl font-bold mb-1">{section.title}</h2>

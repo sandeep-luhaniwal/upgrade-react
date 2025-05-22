@@ -3,14 +3,15 @@ export const NAVIGATION_LINK_LIST = [
         title: "Home",
         url: "/",
     },
+     {
+        title: "About Us",
+        url: "#about_us",
+    },
     {
         title: "Features",
-        url: "/",
+        url: "#features",
     },
-    {
-        title: "How It Works",
-        url: "/",
-    },
+   
 
 ];
 

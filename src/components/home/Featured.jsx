@@ -6,7 +6,7 @@ import Icons from '../common/Icons'
 
 const Featured = () => {
     return (
-        <div className='max-w-[1140px] mx-auto px-4 w-full xl:px-0 py-14 md:py-16 lg:py-20 xl:pt-[100px] xl:pb-[120px]'>
+        <div id='features' className='max-w-[1140px] mx-auto px-4 w-full xl:px-0 py-14 md:py-16 lg:py-20 xl:pt-[100px] xl:pb-[120px]'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center">
                 <div className='order-2 md:order-1 pt-2 md:pt-0'>
                     <TagBox border >featured</TagBox>

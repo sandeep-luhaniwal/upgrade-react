@@ -37,9 +37,9 @@ const Footer = () => {
                 <p className='text-black py-4 text-center font-semibold text-sm leading-100'>Send Your Feedback:
                     <a
                         className="font-normal max-sm:block ms-1 text-black duration-300 hover:text-green"
-                        href="mailto:Support@Interactiveinvoice.com"
+                        href="mailto:support@myinteractiveinvoice.com"
                     >
-                        Support@Interactiveinvoice.com
+                        support@myinteractiveinvoice.com
                     </a>
                 </p>
 
